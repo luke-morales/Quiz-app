@@ -17,30 +17,114 @@ body {
 header {
   background-color: #2a9126;
   height: 100px;
-}
-
-header div {
   font-size: 4rem;
   text-align: center;
   padding-top: 10px;
-  color: #e0e0e0;
+  color: #e3ffe2;
+}
+
+.hideMe {
+  display: none;
 }
 
 main {
-  background-color: #eae8ff;
+  position: relative;
+  background-color: #e3ffe2;
   height: 800px;
+}
+
+.hero {
   background-image: url(https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Goldenwinged-Skimmer/i-QQ8Hskg/0/627636b6/X3/9G2A9322_160721_7D%20Mark%20II-X3.jpg);
   background-position: center;
   background-size: cover;
 }
 
 button {
-  margin: 600px 300px 0px 300px;
+  position: absolute;
   width: 600px;
+  top: 600px;
+  left: 300px;
   height: 80px;
   border-radius: 20px;
   background: lightgray;
-  font-size: 2.7rem;
+  font-size: 2rem;
   border: 0px;
+}
 
+.col50 {
+  width: 48%;
+  float: left;
+}
+
+.image-container {
+  height: 400px;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+.question-container {
+  height: 400px;
+  margin-top: 50px;
+  padding: 40px 80px;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 5%;
+  height: 1em;
+  padding-top: 100px;
+  vertical-align:middle;
+}
+
+.image-container img {
+  width: 90%;
+  float: right;
+}
+
+.correct {
+  top: 500px;
+  background-color: #2a9126;
+  color: #e3ffe2;
+  border-radius: 0px;
+}
+
+.wrong {
+  top: 450px;
+  background-color: #ff1d1d;
+  color: #e3ffe2;
+  border-radius: 0px;
+  height: 130px;
+}
+
+.wrong p {
+  line-height: 3rem;
+}
+
+footer {
+  position: absolute;
+  clear: both;
+  margin-top: 750px;
+  width: 100%;
+  height: 50px;
+  background-color: #2a9126;
+}
+
+#left-footer {
+  display: inline-block;
+  float: left;
+  width: 200px;
+  color: #e3ffe2;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#right-footer {
+  display: inline-block;
+  float: right;
+  width: 160px;
+  color: #e3ffe2;
+  padding: 10px;
+  font-size: 1.5rem;
 }
