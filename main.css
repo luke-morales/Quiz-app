@@ -39,6 +39,12 @@ main {
   background-size: cover;
 }
 
+.last-page {
+  background-image: url(https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Painted-Skimmer/i-2RWdDxn/0/8921a246/X3/9G2A5284_160620_7D%20Mark%20II-X3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 button {
   position: absolute;
   width: 600px;
@@ -46,7 +52,7 @@ button {
   left: 300px;
   height: 80px;
   border-radius: 20px;
-  background: lightgray;
+  background: #e3ffe2;
   font-size: 2rem;
   border: 0px;
 }
@@ -127,4 +133,19 @@ footer {
   color: #e3ffe2;
   padding: 10px;
   font-size: 1.5rem;
+}
+
+#results-report {
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  background-color: rgba(42, 145, 38, 0.7);
+  height: 200px;
+  width: 600px;
+  color: #e3ffe2;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: center;
+  padding-top: 40px;
 }
