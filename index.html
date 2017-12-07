@@ -25,23 +25,20 @@
 
     <main class="row quiz-page js-quiz-page hideMe">
       <div class="image-container col50">
-        <img src="https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Twelvespotted-Skimmer/i-CNcchSN/0/15dc5b20/XL/9G2A8780_170824_7D%20Mark%20II-XL.jpg" alt="">
+        <img class= "js-quiz-image" src="" alt="">
       </div>
 
       <div class="question-container col50">
-        <form>
-          <input type="radio" name="dragon"> Twelve-spotted Skimmer<br>
-          <input type="radio" name="dragon"> Common Whitetail<br>
-          <input type="radio" name="dragon"> Widow Skimmer<br>
-          <input type="radio" name="dragon"> Prince Baskettail<br>
+        <form class="js-answers">
+    <!--Dynamically generated in javascript-->
         </form>
       </div>
 
-      <button class="correct" type="button">
+      <button class="correct js-correct hideMe" type="button">
         Correct!
       </button>
 
-      <button class="wrong hideMe" type="button">
+      <button class="wrong js-wrong hideMe" type="button">
         <p>Incorrect</p>
         <p>Twelve-spotted Skimmer is correct</p>
       </button>
