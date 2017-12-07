@@ -29,9 +29,7 @@ Object.keys(questionObject).forEach(function(key){
 
 function renderHeroPage (){
   $('.js-hero').removeClass('hideMe');
-  $('.js-quiz-page').removeClass('hideMe');
   $('.js-quiz-page').addClass('hideMe');
-  $('.js-last-page').removeClass('hideMe');
   $('.js-last-page').addClass('hideMe');
   $('.js-hero-button').click(function(){
     renderQuizPage();
@@ -40,9 +38,7 @@ function renderHeroPage (){
 
 function renderLastPage (){
   $('.js-last-page').removeClass('hideMe');
-  $('.js-quiz-page').removeClass('hideMe');
   $('.js-quiz-page').addClass('hideMe');
-  $('.js-hero').removeClass('hideMe');
   $('.js-hero').addClass('hideMe');
   $('.js-last-page-button').click(function(){
     renderHeroPage();
@@ -51,9 +47,7 @@ function renderLastPage (){
 
 function renderQuizPage (){
   $('.js-quiz-page').removeClass('hideMe');
-  $('.js-hero').removeClass('hideMe');
   $('.js-hero').addClass('hideMe');
-  $('.js-last-page').removeClass('hideMe');
   $('.js-last-page').addClass('hideMe');
   $('.js-quiz-image').attr('src', questionObject.Question1[0]);
   var questionHTML = "";
@@ -67,11 +61,9 @@ function renderQuizPage (){
   $('input[type=radio][name=dragon]').change(function() {
     if (this.value === questionObject.Question1[5]) {
       $('.js-correct').removeClass('hideMe');
-      $('.js-wrong').removeClass('hideMe');
       $('.js-wrong').addClass('hideMe');
     } else {
       $('.js-wrong').removeClass('hideMe');
-      $('.js-correct').removeClass('hideMe');
       $('.js-correct').addClass('hideMe');
     }
     $('input[type=radio][name=dragon]').unbind();
@@ -79,6 +71,8 @@ function renderQuizPage (){
 
 
   $('.js-quiz-button').click(function(){
+    $('.js-wrong').addClass('hideMe');
+    $('.js-correct').addClass('hideMe');
     renderLastPage();
   })
 };
