@@ -4,6 +4,9 @@ var questionObject = {
   Question3: ['img/WhiteCorporal.jpg', 'Common Whitetail', 'Great Blue Skimmer', 'Widow Skimmer', 'White Corporal', 'White Corporal']
 }
 
+var numberCorrect = 0;
+var currentQuestionNumber = 1;
+
 /*
 var junk = questionObject.Question1[1];
 console.log(junk);
@@ -14,17 +17,6 @@ Object.keys(questionObject).forEach(function(key){
     '.'
   );
 })
-
- $('input[type=radio][name=dragon]').change(function() {
-        if (this.value === questionObject.Question1[5]) {
-            console.log("Correct Answer");
-        }
-        else {
-            console.log("Wrong Answer);
-        }
-    });
-
-
 */
 
 function renderHeroPage (){
@@ -40,6 +32,10 @@ function renderLastPage (){
   $('.js-last-page').removeClass('hideMe');
   $('.js-quiz-page').addClass('hideMe');
   $('.js-hero').addClass('hideMe');
+  var totalQuestions = currentQuestionNumber -1;
+  $('.js-total-score').text(numberCorrect + '/' + totalQuestions);
+  numberCorrect = 0;
+  currentQuestionNumber = 1;
   $('.js-last-page-button').click(function(){
     renderHeroPage();
   })
@@ -58,10 +54,14 @@ function renderQuizPage (){
   };
   $('.js-answers').html(questionHTML);
 
+  $('#left-footer').text('Question ' + currentQuestionNumber + '/10');
+  $('#right-footer').text(numberCorrect + '/' + currentQuestionNumber + ' Correct');
+
   $('input[type=radio][name=dragon]').change(function() {
     if (this.value === questionObject.Question1[5]) {
       $('.js-correct').removeClass('hideMe');
       $('.js-wrong').addClass('hideMe');
+      numberCorrect = numberCorrect + 1;
     } else {
       $('.js-wrong').removeClass('hideMe');
       $('.js-correct').addClass('hideMe');
@@ -73,6 +73,7 @@ function renderQuizPage (){
   $('.js-quiz-button').click(function(){
     $('.js-wrong').addClass('hideMe');
     $('.js-correct').addClass('hideMe');
+    currentQuestionNumber = currentQuestionNumber + 1;
     renderLastPage();
   })
 };
