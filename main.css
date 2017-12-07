@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  background-color: #2a9126;
+  height: 100px;
+}
+
+header div {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 10px;
+  color: #e0e0e0;
+}
+
+main {
+  background-color: #eae8ff;
+  height: 800px;
+  background-image: url(https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Goldenwinged-Skimmer/i-QQ8Hskg/0/627636b6/X3/9G2A9322_160721_7D%20Mark%20II-X3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  margin: 600px 300px 0px 300px;
+  width: 600px;
+  height: 80px;
+  border-radius: 20px;
+  background: lightgray;
+  font-size: 2.7rem;
+  border: 0px;
+
+}
