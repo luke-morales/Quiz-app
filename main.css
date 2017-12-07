@@ -29,18 +29,18 @@ header {
 
 main {
   position: relative;
-  background-color: #e3ffe2;
+  background-color: #aad1a9;
   height: 800px;
 }
 
 .hero {
-  background-image: url(https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Goldenwinged-Skimmer/i-QQ8Hskg/0/627636b6/X3/9G2A9322_160721_7D%20Mark%20II-X3.jpg);
+  background-image: url(img/GoldenWingedSkimmer.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .last-page {
-  background-image: url(https://photos.smugmug.com/Odonates/DelmarvaOdonates/Dragons/Skimmers/Painted-Skimmer/i-2RWdDxn/0/8921a246/X3/9G2A5284_160620_7D%20Mark%20II-X3.jpg);
+  background-image: url(img/PaintedSkimmer.jpg);
   background-position: center;
   background-size: cover;
 }
