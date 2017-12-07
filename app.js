@@ -63,6 +63,7 @@ function renderQuizPage (){
       $('.js-wrong').addClass('hideMe');
       numberCorrect = numberCorrect + 1;
     } else {
+      $('.js-correct-answer').text(questionObject.Question1[5]);
       $('.js-wrong').removeClass('hideMe');
       $('.js-correct').addClass('hideMe');
     }
