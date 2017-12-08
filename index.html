@@ -30,7 +30,7 @@
 
       <div class="question-container col50">
         <form class="js-answers">
-    <!--Dynamically generated in javascript-->
+          <!--Dynamically generated in javascript-->
         </form>
       </div>
 
@@ -43,7 +43,7 @@
         <p id="js-correct-answer"></p>
       </button>
 
-      <button class="js-quiz-button" type="button">
+      <button class="js-quiz-button hideMe" type="button">
         Click here to advance
       </button>
 
@@ -56,11 +56,11 @@
     <!--Alternative HTML for last page-->
 
     <main class="row last-page js-last-page hideMe">
-    <div id="results-report">
-      <p>Total Score:</p>
-      <p class="js-total-score">7/10</p>
-    </div>
-     <button class="js-last-page-button" type="button">
+      <div id="results-report">
+        <p>Total Score:</p>
+        <p class="js-total-score">7/10</p>
+      </div>
+      <button class="js-last-page-button" type="button">
         Click to Take Quiz Again
       </button>
 
@@ -69,6 +69,8 @@
 
 
     <script
+            $('#left-footer').text('Question ' + currentQuestionNumber + '/10');
+            $('#right-footer').text(numberCorrect + '/' + currentQuestionNumber + ' Correct');
             src="https://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
