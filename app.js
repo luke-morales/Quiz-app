@@ -79,7 +79,7 @@ function renderQuizPage (pageNumber){
         $('js-answers').addClass('hideMe');
       }
       $('.js-quiz-button').removeClass('hideMe');
-      $('input[type=radio][name=dragon]').unbind();
+      $('input[type=radio][name=dragon]').off();
     });
 
     $('.js-quiz-button').click(function(){
@@ -87,6 +87,7 @@ function renderQuizPage (pageNumber){
       $('.js-correct').addClass('hideMe');
       $('.js-quiz-button').addClass('hideMe');
       newPage = pageNumber;
+      $('.js-quiz-button').off();
       renderQuizPage(newPage);
     });
   } else {
